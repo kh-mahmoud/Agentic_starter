@@ -1,0 +1,131 @@
+**LLMs in 2024: The “Omni‑Capability” Year and What It Means for Builders**  
+
+---
+
+### 1. Why 2024 Feels Like a Turning Point  
+
+I asked a model to read a 300‑page contract, pull out every liability clause, and rewrite the result in plain English. Within seconds it gave me a concise, accurate briefing—something that would have taken a junior associate an hour or more.  
+
+That wasn’t a fluke. A series of upgrades over the past year turned large language models from clever chatbots into truly *omni‑capable* assistants. In plain terms, an LLM is a massive neural network (often billions of parameters) that has been trained on a huge mix of text, images, audio, and even video. By learning to predict the next token, the model picks up the ability to write prose, reason through problems, control external tools, and now perceive the world through multiple senses.  
+
+Below I’ll walk through the biggest shifts that happened in 2024, point out the models that introduced them, and give you a practical checklist for deciding which model—or combination of models—makes sense for your next product.
+
+---
+
+### 2. The Seven 2024 Trends That Redefined LLMs  
+
+**Massive context windows**  
+Until last year most top‑tier models capped at 200 k tokens (Claude 2.1). Google’s Gemini 1.5 Pro shattered that ceiling with a **1 – 2 million‑token** context length, and by the end of 2024 most providers were shipping **100 k+ token** windows. The impact is immediate: you can feed an entire research paper, a full legal contract, or a multi‑chapter novel into a single prompt and get a coherent, document‑level answer without chopping the text into pieces.
+
+**Multimodal explosion**  
+2024 was the year “vision‑language‑audio‑video” stopped sounding like a research demo and became a standard API offering.  
+
+| Model | Modalities | Launch |
+|-------|------------|--------|
+| Gemini 1.5 Pro | Text, images, audio, video | Feb 2024 |
+| GPT‑4o | Text, images, audio, video (voice mode) | May 2024 |
+| Claude 3 series (vision) | Text + image | Mar 2024 |
+| Qwen2‑VL, Pixtral‑12B, Llama 3.2‑vision | Image (and in some cases video) | Sep 2024 |
+| Amazon Nova (image + video) | Image, video (voice preview for 2025) | Dec 2024 |
+
+These capabilities unlock new UI paradigms: a voice‑first support bot that can *see* a screenshot you upload, a live‑video tutoring assistant that watches your handwriting, or an AR app that understands spoken commands while recognizing objects in the camera feed.
+
+**Agentic & tool‑using models**  
+The “answer‑only” paradigm is fading. Claude 3.5 Sonnet introduced **computer‑use**—the model can open a file, run a shell command, or manipulate a spreadsheet and then report the result. OpenAI’s **o1‑preview / o1‑mini / o1‑pro** series (released Sep‑Dec) took a different tack: they spend extra compute *at inference time* to run a step‑by‑step “thinking loop,” producing a chain of reasoning before delivering the final answer. Both approaches move LLMs toward **plan‑and‑act** systems that can automate research, write code, or even control UI elements without a human in the loop.
+
+**Inference‑scaling reasoning**  
+The o1 family proved that you don’t always need a bigger training run to solve harder problems. By allocating more GPU cycles per query, the models achieve performance comparable to much larger, static models. OpenAI hinted at the next iteration, **o3**, which topped the ARC‑AGI benchmark in December, confirming that *more compute at inference* is a viable scaling axis.
+
+**Open‑weight, small‑model surge**  
+While the headline‑grabbing giants (Gemini 1.5 Pro, GPT‑4o) dominate the press, a parallel wave of open‑weight models made high‑quality inference affordable and deployable on edge devices:  
+
+* **Phi‑3** (3.8 – 14 B) – strong on‑device performance.  
+* **Gemma 2** (2 – 27 B) – multilingual, MIT‑licensed.  
+* **SmolLM** (≤ 1.7 B) – ultra‑compact for IoT.  
+* **DeepSeek V2** – open, competitive on benchmarks.  
+* **Llama 3.1‑405B** – the largest open‑weight model released to date.
+
+These models democratize access, cut inference cost dramatically, and enable scenarios like on‑phone translation or offline document summarisation.
+
+**Pricing war**  
+Token pricing fell sharply across the board, turning LLM usage from a niche expense into a commodity. Here’s a quick snapshot (prices are per 1 M tokens, input + output):  
+
+| Provider | Model | Input / Output price |
+|----------|-------|----------------------|
+| OpenAI | GPT‑4o | **$5 / $15** |
+| OpenAI | GPT‑4o mini | **$0.15 / $0.60** |
+| Google | Gemini 1.5 Pro | **$1.25 / $5** |
+| Amazon | Nova Pro | **$0.80 / $3.20** |
+| Amazon | Nova Lite | **$0.06 / $0.24** |
+| Open‑source (Llama 3, DeepSeek V2) | – | **$0.06 – $0.14** |
+
+OpenAI’s price cuts alone represent a **≈ 90 %** reduction since March 2023 while performance kept climbing (DeepLearning.AI, 2024). The result? Start‑ups can now run high‑volume chat or summarisation pipelines for a few dollars a day.
+
+**Synthetic training data & sustainability**  
+Training pipelines have become more creative. DeepSeek‑v3, for example, generated its own reasoning examples using the earlier DeepSeek‑R1 model, while Meta fine‑tuned Llama 3.3‑70B on **25 M synthetic samples**. This reduces reliance on noisy web scrapes, improves safety, and slashes the carbon footprint. DeepSeek‑v3 achieved **GPT‑4‑level performance** with an estimated **$5.6 M** compute budget, compared with Llama 3.1‑405B’s **≈ $30 M** (Willison, 2024). Distillation, pruning, and quantisation are now standard steps even for the smallest models, making “green AI” a realistic target.
+
+---
+
+### 3. First‑of‑Its‑Kind Models of 2024  
+
+| Provider | Model (Release) | First‑of‑Its‑Kind Feature |
+|----------|----------------|----------------------------|
+| **Google** | Gemini 1.5 Pro (Feb) | 1‑2 M token context + video + audio input |
+| **OpenAI** | GPT‑4o (May) | True “omni” multimodal (text + image + audio + video) with voice mode |
+| **OpenAI** | o1‑preview / o1‑mini / o1‑pro (Sep‑Dec) | Inference‑scaling reasoning loops (extra compute per query) |
+| **Anthropic** | Claude 3.5 Sonnet (Jun) | Computer‑use tool + “Artifacts” interactive UI |
+| **Mistral** | Pixtral‑12B (Sept) | Open‑weight vision‑only model that outperforms larger closed models |
+| **Meta** | Llama 3.2‑vision (Nov) | Open‑weight, multilingual vision‑enabled 11 B / 90 B |
+| **Alibaba / Qwen** | Qwen2‑VL (Sept) | Vision‑language model with Chinese‑centric data |
+| **DeepSeek** | DeepSeek‑v3 (Dec) | Top‑10 benchmark ranking at ~ $5.6 M training cost |
+| **Amazon** | Nova family (Dec) | Multi‑modal (image + video) with tiered pricing; voice preview for 2025 |
+
+Together these releases turned “multimodal” and “agentic” from research buzzwords into production‑ready features.
+
+---
+
+### 4. Practical Playbook for Developers & Product Teams  
+
+| Goal | Recommended Model(s) | Why It Fits |
+|------|----------------------|-------------|
+| **Summarise long documents (legal, research)** | Gemini 1.5 Pro, Claude 3.5 Sonnet | 1‑2 M token windows let you feed the whole file in one go. |
+| **Voice‑first consumer app** | GPT‑4o (WebRTC API), Gemini 1.5 Pro (audio) | Built‑in speech‑to‑text & text‑to‑speech, low latency. |
+| **Image‑heavy workflow (e‑commerce tagging, visual QA)** | Pixtral‑12B, Gemini 1.5 Pro, Qwen2‑VL | Vision‑only or multimodal models with strong image understanding. |
+| **Autonomous research assistant / code generator** | Claude 3.5 Sonnet (computer‑use), o1‑preview (step‑by‑step) | Both provide planning loops and can execute external tools. |
+| **High‑volume, cost‑sensitive generation** | Llama 3.1‑405B, DeepSeek‑V2, Gemini 1.5 Pro (if you need multimodal) | Open‑weight models cost **$0.06‑$0.14** per M tokens, an order of magnitude cheaper than closed‑source. |
+| **On‑device inference (mobile, IoT)** | Phi‑3, Gemma 2, SmolLM | Sub‑15 B parameters, quantised to 4‑bit, run on modern smartphones. |
+| **Rapid prototyping & evaluation** | Claude 3.5 “Artifacts” UI or Mistral Canvas | Gives you a visual sanity check before writing any front‑end code. |
+
+**Checklist before you start**  
+
+1. **Define the required context length.** If you need > 100 k tokens, lock in Gemini 1.5 Pro or Claude 3.5 Sonnet.  
+2. **Pick the modality stack.** Voice? → GPT‑4o. Video? → Gemini 1.5 Pro. Pure image? → Pixtral‑12B.  
+3. **Decide on autonomy.** Need the model to run commands or browse? Choose a tool‑using model (Claude 3.5) or an inference‑scaling model (o1).  
+4. **Run a cost model.** Multiply expected token volume by per‑token price; compare closed‑source vs. open‑weight options.  
+5. **Prototype on a sandbox.** Most providers offer 10 M‑20 M free tokens—use them to validate latency and quality.  
+6. **Set up automated evaluation.** Leverage leaderboard suites like Chatbot‑Arena or the “Artifacts” test harness to catch regressions early.  
+
+---
+
+### 5. Business Impact – From Cost Savings to New Products  
+
+* **Content creation at scale** – With GPT‑4o mini at **$0.15 / $0.60** per M tokens, generating 10 M words of marketing copy costs under $10.  
+* **Customer‑service bots that *see*** – A support portal can now accept a screenshot of an error message, have the model diagnose the issue, and reply with a step‑by‑step fix—all in a single API call.  
+* **Developer tools that act** – Claude 3.5’s computer‑use can automatically refactor a pull request, run the test suite, and comment on failures, turning code review into a near‑real‑time assistant.  
+* **Edge AI products** – A translation app built on Phi‑3 runs entirely offline, eliminating data‑privacy concerns and reducing server costs to near zero.  
+
+The common thread is **lower cost + higher capability = new business models**. Companies that previously avoided LLMs because of price or latency can now embed them directly into core workflows.
+
+---
+
+### 6. Looking Ahead to 2025  
+
+| Anticipated development | Why it matters |
+|--------------------------|----------------|
+| **Live‑video agents** (Google Gemini 2.0, OpenAI “o3‑vision”) | Real‑time visual reasoning for AR/VR, remote assistance, and interactive tutoring. |
+| **Synthetic‑data pipelines as a service** | Labs will offer “data‑as‑a‑product” to train domain‑specific reasoning without scraping the web. |
+| **Further price erosion** | Token costs could dip below **$0.05 / $0.15** for open‑weight models, making massive batch jobs trivial. |
+| **More open‑weight vision‑reasoning models** (e.g., a 70 B multimodal Llama) | Democratizes research‑grade multimodal AI for academia and startups. |
+| **Standardised agentic APIs** (OpenAI’s “tool‑use” spec, Anthropic’s “Artifacts” SDK) | Reduces engineering friction when building autonomous bots. |
+
+If you’re planning a product roadmap, flag any feature that could benefit from **real‑time perception** or **autonomous planning**. In 2024 the building blocks are finally affordable and reliable enough to turn those ideas into shipped products.
