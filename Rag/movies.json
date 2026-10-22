@@ -1,0 +1,127 @@
+[
+    {
+        "title": "Inception",
+        "description": "A skilled thief enters people's dreams to steal secrets from their subconscious. He is offered a chance to erase his criminal past by performing the difficult task of planting an idea in someone's mind.",
+        "genre": ["Science Fiction", "Action", "Thriller"]
+    },
+    {
+        "title": "Interstellar",
+        "description": "As Earth becomes increasingly difficult to inhabit, a former pilot joins a mission through a wormhole to search for a planet where humanity can survive. The journey explores love, sacrifice, time, and the survival of the human species.",
+        "genre": ["Science Fiction", "Adventure", "Drama"]
+    },
+    {
+        "title": "The Matrix",
+        "description": "A computer programmer discovers that the world he knows is a simulated reality created by intelligent machines. He joins a group of rebels who fight to free humanity from the system controlling their minds.",
+        "genre": ["Science Fiction", "Action"]
+    },
+    {
+        "title": "The Shawshank Redemption",
+        "description": "A banker is sentenced to life in prison for a crime he says he did not commit. Over many years, he builds an unlikely friendship with another inmate and quietly develops a plan to regain his freedom.",
+        "genre": ["Drama", "Crime"]
+    },
+    {
+        "title": "The Godfather",
+        "description": "The aging head of a powerful Italian-American crime family tries to protect his family and business. When violence threatens the family, his youngest son becomes increasingly involved in the criminal empire he once wanted to avoid.",
+        "genre": ["Crime", "Drama"]
+    },
+    {
+        "title": "Jurassic Park",
+        "description": "A billionaire creates a wildlife park populated by dinosaurs brought back through genetic engineering. During a preview visit, security systems fail and the scientists and guests must survive the dangerous creatures.",
+        "genre": ["Science Fiction", "Adventure", "Thriller"]
+    },
+    {
+        "title": "Finding Nemo",
+        "description": "A cautious clownfish crosses the ocean to find his missing son. Along the way, he meets unexpected companions and learns to face danger while his son tries to find his way home.",
+        "genre": ["Animation", "Adventure", "Family"]
+    },
+    {
+        "title": "Spirited Away",
+        "description": "A young girl enters a mysterious spirit world after her parents are transformed. She takes a job in a magical bathhouse and must show courage and kindness to rescue her family and return to the human world.",
+        "genre": ["Animation", "Fantasy", "Adventure"]
+    },
+    {
+        "title": "The Dark Knight",
+        "description": "Batman faces a chaotic criminal mastermind who tests the moral limits of Gotham City. As the city struggles with fear and corruption, Batman must decide how much he is willing to sacrifice to protect its people.",
+        "genre": ["Action", "Crime", "Drama"]
+    },
+    {
+        "title": "Arrival",
+        "description": "A linguist is recruited to communicate with mysterious alien visitors who have arrived on Earth. As global tensions rise, she works to understand their language and discovers that communication can change how people perceive time and the future.",
+        "genre": ["Science Fiction", "Drama", "Mystery"]
+    },
+    {
+        "title": "The Martian",
+        "description": "An astronaut is accidentally left behind on Mars after his crew evacuates during a storm. Using scientific knowledge, engineering, and resourcefulness, he tries to survive while teams on Earth and in space work to bring him home.",
+        "genre": ["Science Fiction", "Adventure", "Drama"]
+    },
+    {
+        "title": "Coco",
+        "description": "A young boy who dreams of becoming a musician enters the Land of the Dead during a family celebration. He uncovers the history of his ancestors and learns why family memories and traditions matter.",
+        "genre": ["Animation", "Family", "Fantasy"]
+    },
+    {
+        "title": "Toy Story",
+        "description": "A cowboy toy worries that he will lose his place when a high-tech space ranger becomes a child's new favorite. The two toys eventually work together to return home and learn the value of friendship.",
+        "genre": ["Animation", "Comedy", "Family"]
+    },
+    {
+        "title": "Get Out",
+        "description": "A young man visits his girlfriend's family for the first time and notices increasingly unsettling behavior from the people around him. His weekend visit becomes a frightening discovery involving manipulation, identity, and hidden intentions.",
+        "genre": ["Horror", "Mystery", "Thriller"]
+    },
+    {
+        "title": "A Quiet Place",
+        "description": "A family tries to survive in a world where mysterious creatures hunt by sound. They must communicate in near silence and carefully manage everyday tasks while protecting their children from danger.",
+        "genre": ["Horror", "Science Fiction", "Thriller"]
+    },
+    {
+        "title": "Pride and Prejudice",
+        "description": "An independent young woman navigates family expectations, social class, and romantic misunderstandings in nineteenth-century England. Her changing relationship with a reserved wealthy gentleman challenges both characters' first impressions.",
+        "genre": ["Romance", "Drama"]
+    },
+    {
+        "title": "The Grand Budapest Hotel",
+        "description": "A legendary hotel concierge and his young lobby assistant become involved in the theft of a valuable painting and a dispute over an inheritance. Their adventures unfold amid eccentric characters, shifting borders, and elaborate schemes.",
+        "genre": ["Comedy", "Adventure", "Crime"]
+    },
+    {
+        "title": "Hidden Figures",
+        "description": "Three Black women mathematicians work at NASA during the space race. Despite discrimination and institutional barriers, their calculations and technical expertise help make an important human spaceflight mission possible.",
+        "genre": ["Drama", "History", "Biography"]
+    },
+    {
+        "title": "The Social Network",
+        "description": "A university student creates a social networking website that grows into a global technology company. As its success expands, disputes over ownership, friendship, ambition, and responsibility lead to legal battles.",
+        "genre": ["Drama", "Biography"]
+    },
+    {
+        "title": "How to Train Your Dragon",
+        "description": "A young Viking who does not fit his village's dragon-fighting traditions befriends an injured dragon. Their relationship challenges the community's beliefs and helps humans and dragons discover a different way to live together.",
+        "genre": ["Animation", "Fantasy", "Adventure"]
+    },
+    {
+        "title": "Edge of Tomorrow",
+        "description": "A military officer with little combat experience becomes trapped in a time loop during a war against alien invaders. Each repeated battle gives him new knowledge and skills that may help humanity defeat the enemy.",
+        "genre": ["Science Fiction", "Action", "Adventure"]
+    },
+    {
+        "title": "Knives Out",
+        "description": "A famous mystery novelist dies after a family gathering, and a detective investigates the conflicting stories of his relatives and staff. Hidden motives, family tensions, and unexpected clues complicate the search for the truth.",
+        "genre": ["Mystery", "Comedy", "Crime"]
+    },
+    {
+        "title": "The Lion King",
+        "description": "A young lion prince flees his kingdom after a family tragedy. With help from new friends, he grows into adulthood and eventually returns to confront the past and take responsibility for his home.",
+        "genre": ["Animation", "Adventure", "Drama"]
+    },
+    {
+        "title": "Ex Machina",
+        "description": "A young programmer is invited to a remote research facility to evaluate an advanced humanoid artificial intelligence. The experiment raises questions about consciousness, manipulation, trust, and what it means to be human.",
+        "genre": ["Science Fiction", "Drama", "Thriller"]
+    },
+    {
+        "title": "The Pursuit of Happyness",
+        "description": "A struggling father faces homelessness while caring for his young son and pursuing an unpaid internship in finance. Through persistence and hard work, he tries to create a more stable future for his family.",
+        "genre": ["Drama", "Biography"]
+    }
+]
