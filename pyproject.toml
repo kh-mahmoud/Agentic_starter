@@ -18,6 +18,19 @@ dependencies = [
     "langchain-mcp-adapters>=0.3.2",
     "pywin32>=312",
     "langchain-community>=0.4.2",
+    "qu>=1.2.5",
+    "langchain-pinecone>=0.2.13",
+    "langchain-chroma>=1.1.0",
+    "jq>=1.13.0",
+    "llama-index>=0.14.25",
+    "llama-index-readers-web>=0.7.0",
+    "llama-index-llms-google-genai>=0.11.3",
+    "llama-index-embeddings-google-genai>=0.6.0",
+    "nest-asyncio>=1.6.0",
+    "pypdf>=6.21.2",
+    "langchain-opendataloader-pdf>=2.0.0",
+    "docling>=2.142.1",
+    "langchain-classic>=1.0.8",
 ]
 
 [dependency-groups]
