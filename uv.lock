@@ -1995,6 +1995,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "docling" },
+    { name = "ipython" },
     { name = "jq" },
     { name = "langchain", extra = ["google-genai"] },
     { name = "langchain-chroma" },
@@ -2030,6 +2031,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "docling", specifier = ">=2.142.1" },
+    { name = "ipython", specifier = ">=9.17.1" },
     { name = "jq", specifier = ">=1.13.0" },
     { name = "langchain", extras = ["google-genai"], specifier = ">=1.4.5" },
     { name = "langchain-chroma", specifier = ">=1.1.0" },
